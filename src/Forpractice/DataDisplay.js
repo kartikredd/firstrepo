@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Typography } from "antd";
+const {TItle}=Typography;
 
 function DataDisplay() {
     const [userData, setUserData] = useState({});
@@ -10,8 +11,8 @@ function DataDisplay() {
     return (
         <div>
             <center>
-            <Typography.Title level={2} style={{color:"blue"}}>Your Name: {userData.name}</Typography.Title>
-            <Typography.Title level={3} style={{color:"red"}}> Your Password: {userData.password}</Typography.Title>
+            <Title level={2} style={{color:"blue"}}>Your Name: {userData.name}</Title>
+            <Title level={3} style={{color:"red"}}> Your Password: {userData.password}</Title>
             </center>
         </div>
     );
