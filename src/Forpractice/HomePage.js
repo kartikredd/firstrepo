@@ -6,7 +6,7 @@ const Homepage = () => {
     <>
       <Navbar />
       <br />
-    console.log("Hello world"):
+    console.log("Hello World!!");
       <center>
         <img src={ReactLogo} height={"500px"} alt="" />
       </center>
