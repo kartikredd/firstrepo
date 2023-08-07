@@ -3,17 +3,23 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Homepage from "./Forpractice/HomePage";
-import PracticeLoginForm from "./Forpractice/PracticeLoginForm";
-import DataDisplay from "./Forpractice/DataDisplay";
+// import Login from "./Figma-SSMB/Login";
+import LoginForm from "./Figma-SMB/LoginForm";
+import Landingpage from "./Figma-SMB/LandingPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  // <BrowserRouter>
+  //   <Routes>
+  //     <Route path="/" element={<Homepage />} />
+  //     <Route path="/login" element={<PracticeLoginForm />} />
+  //     <Route path="/datadisplay" element={<DataDisplay />} />
+  //   </Routes>
+  // </BrowserRouter>
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={< Homepage/>} />
-      <Route path="/login" element={< PracticeLoginForm/>}/>
-      <Route path="/datadisplay" element={<DataDisplay/>}/>
+      <Route path="/" element={<Landingpage />} />
+      <Route path="/login" element={<LoginForm />} />
     </Routes>
   </BrowserRouter>
 );
